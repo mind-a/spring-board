@@ -35,7 +35,6 @@
 </div>
 <div class="text-center" th:if="${isAuthor || isAdmin}">
     <a th:href="@{/posts/edit/{id}(id=${post.id})}"><button class="btn btn-success">수정하기</button></a>
-    <!-- 삭제 버튼 (작성자 또는 관리자만 표시) -->
     <form th:action="@{/posts/delete/{id}(id=${post.id})}" method="post" style="display:inline;">
         <button type="submit" style="background-color:red; color:white;" class="btn btn-danger">삭제하기</button>
     </form>

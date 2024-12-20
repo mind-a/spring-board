@@ -122,6 +122,6 @@ public class PostController {
             throw new AccessDeniedException("삭제 권한이 없습니다.");
         }
         postService.deletePost(id);
-        return "redirect:/"; // 삭제 후 메인 페이지로 리다이렉트
+        return "redirect:/";
     }
 }

@@ -21,7 +21,7 @@ public class Member {
 
     @NotNull
     @Size(min = 4, max = 20, message = "아이디는 4자 이상 20자 이하로 입력해야 합니다.")
-    @Column(unique = true, length = 20)// 데이터베이스에서 최대 길이 20으로 제한
+    @Column(unique = true, length = 20)
     private String memberId;
 
     @NotNull

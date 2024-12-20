@@ -12,7 +12,6 @@ import org.springframework.stereotype.Service;
 @Service
 @RequiredArgsConstructor
 public class CustomUserDetailsService implements UserDetailsService {
-    //Spring Security 인증시 사용자 정보 조회용
 
     private final MemberRepository memberRepository;
 
